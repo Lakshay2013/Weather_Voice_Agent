@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Weather Voice Agent — Safe Mode</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="container">
+    <h1>Weather Voice Agent</h1>
+
+    <section class="controls">
+      <div class="voice-controls">
+        <button id="startBtn" class="btn">Start Listening</button>
+        <button id="stopBtn" class="btn btn-ghost" disabled>Stop</button>
+        <div id="micStatus" class="status">Mic: idle</div>
+      </div>
+
+      <div class="manual">
+        <label for="cityInput">City (type):</label>
+        <input id="cityInput" placeholder="e.g. Mumbai" />
+        <button id="getWeatherBtn" class="btn">Get Weather</button>
+      </div>
+    </section>
+
+    <section class="transcript">
+      <h2>Transcript</h2>
+      <div id="transcriptBox" class="box">—</div>
+    </section>
+
+    <section class="weather">
+      <h2>Weather</h2>
+      <div id="weatherBox" class="box">No data yet</div>
+    </section>
+
+    <section class="notes">
+      <small>
+        Tips: Say phrases like <em>"weather in Delhi"</em> or simply <em>"Delhi"</em>.
+        If speech recognition isn't supported, use the manual input.
+      </small>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
+

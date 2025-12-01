@@ -1,0 +1,17 @@
+{
+  "name": "weather-voice-agent",
+  "version": "1.0.0",
+  "description": "Weather voice agent with server-side API key proxy",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "you",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^16.6.1",
+    "express": "^4.22.0",
+    "node-fetch": "^2.7.0"
+  },
+  "keywords": []
+}
